@@ -1,0 +1,35 @@
+import java.awt.*;
+import javax.swing.*;
+import java.awt.event.*;
+class MyCanvas3 extends Canvas
+{
+	
+	public void paint(Graphics g)
+	{
+		g.drawLine(0,0,100,100);
+		g.drawRect(10,10,60,50);
+		//g.drawRoundRect(10,10,60,50,0,75);
+		g.drawOval(10,10,50,50);
+		g.fillOval(10,40,70,70);
+		int xpoints[]={30,200,30,200,30};
+		int ypoints[]={30,30,200,200,30};
+
+		g.drawPolygon(xpoints,ypoints,5);
+	}
+}
+
+class MyF4
+{
+	
+	MyF4()
+	{
+		JFrame f=new JFrame("Lines");
+		MyCanvas3 c=new MyCanvas3(); 
+		f.add(c); f.setSize(400,400); f.setVisible(true);
+
+	}
+	public static void main(String... args)
+	{
+		new MyF4();
+	}
+}

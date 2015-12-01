@@ -1,0 +1,11 @@
+import java.io.*;
+class  Test4
+{
+	public static void main(String[] args) throws IOException
+	{
+		File f=new File("E:","xyz");
+		f.mkdir();
+		File f1=new File(f,"demo.txt");
+		f1.createNewFile();
+	}
+}

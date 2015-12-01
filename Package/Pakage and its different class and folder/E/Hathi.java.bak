@@ -1,0 +1,8 @@
+package p1;
+public class  Hathi
+{
+	public void msg1() 
+	{
+		System.out.println("E/P1/Hathi");
+	}
+}

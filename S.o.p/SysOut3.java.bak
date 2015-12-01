@@ -1,0 +1,38 @@
+class Static 
+{
+	static Demo d;
+	static {
+		       try
+		       {
+				  int z=System.in.read();
+				  d=new Demo(z);
+		       }
+		       catch (Exception a)
+		       {
+		       }
+	       }
+}
+
+class Demo
+{
+	int x;
+	Demo(int x)
+	{
+		this.x=x;
+	}
+
+    void show(int x)
+	{
+		System.out.println(x);
+	}
+}
+
+class SysOut3
+{
+
+    public static void main(String []args)
+	{
+       Static.d.show(Static.d.x);
+	}
+
+}

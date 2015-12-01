@@ -1,0 +1,11 @@
+import java.io.*;
+class Merge2 
+{
+	public static void main(String[] args) throws IOException
+	{
+		File f=new File("F:\\JAVA\\Coaching\\File IO\\Merge,Extract,Duplicate");
+		String[] s=f.list();
+		for(String s1:s)
+			System.out.println(s1);
+	}
+}

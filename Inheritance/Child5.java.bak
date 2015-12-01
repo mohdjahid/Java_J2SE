@@ -1,0 +1,27 @@
+class Parent    // Thread
+{
+    int x=10;
+	void start()
+	{
+		System.out.println(x);
+		run();
+	}
+	void run()
+	{
+		System.out.println("Parent");
+	}
+}
+
+class Child5 extends Parent   // MyThread 
+{
+	int x=20;
+	void run()
+	{
+		System.out.println("Child5");
+	}
+	public static void main(String[] args) 
+	{
+		Child4 c=new Child4();
+		c.start();
+	}
+}

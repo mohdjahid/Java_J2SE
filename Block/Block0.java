@@ -1,0 +1,18 @@
+class Block0 
+{
+	Block0()
+	{
+		System.out.println("Constructor is invocked");
+	}
+
+    {
+
+        System.out.println("Init block is invocked");
+    
+	}
+	
+	public static void main(String[] args) 
+	{
+		new Block0();
+	}
+}

@@ -1,0 +1,9 @@
+class CallByValue
+{
+	int data=50;
+
+	void change( int data )
+	{
+		data=data+100;
+		System.out.println("Data in chnage : "+data);
+}

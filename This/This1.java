@@ -1,0 +1,24 @@
+class This1
+{
+	void method1()
+	{
+	  System.out.println("Method1 is invocked implicitly using this");
+	 /*this.*/ method2();
+	}
+    
+	void method2()
+	{
+	  System.out.println("Method2 is invocked implicitly using this");
+	}
+
+	This1()
+    {
+      System.out.println("Constructor is invocked");
+	  /*this.*/method1();
+	}
+    
+	public static void main(String[] args) 
+	{
+		new This1(); //Anonymous object
+	}
+}

@@ -1,0 +1,23 @@
+class MyThread4 extends Thread 
+{
+	public void start()
+	{
+		super.start();
+		System.out.println("start()");
+	}
+
+	public void run() 
+	{
+		System.out.println("run()");
+	}
+}
+
+class ThreadDemo4
+{
+	public static void main(String... args)
+	{
+		MyThread4 t=new MyThread4();
+		t.start();
+		System.out.println("Main method()");
+	}
+}

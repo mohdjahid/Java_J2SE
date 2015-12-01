@@ -1,0 +1,4 @@
+dprolog
+true
+abc
+10.5

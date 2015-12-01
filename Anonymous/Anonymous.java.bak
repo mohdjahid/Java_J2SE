@@ -1,0 +1,23 @@
+class Anonymous
+{
+	void change()
+	{
+	   System.out.println("Hello");
+	}
+
+	Anonymous()
+    {
+	   System.out.println("World");
+    }
+
+	void show()
+    {
+		System.out.println("Show");
+	}
+
+	public static void main(String []args)
+	{
+		new Anonymous().change().show();
+	}
+
+}

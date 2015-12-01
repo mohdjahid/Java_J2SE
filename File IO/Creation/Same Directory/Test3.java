@@ -1,0 +1,12 @@
+// create a directory named "prolog" and create a file named "demo.txt" in the directory.
+import java.io.*;
+class Test3 
+{
+	public static void main(String[] args) throws IOException
+	{
+		File f=new File("prolog1");
+		f.mkdir();
+		File f1=new File(f,"demo.txt");
+		f1.createNewFile();
+	}
+}

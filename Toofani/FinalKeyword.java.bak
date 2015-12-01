@@ -1,0 +1,14 @@
+class FinalKeyword 
+{
+	final Integer i=new Integer(10);
+	final Integer j=new Integer(10);
+
+	public static void main(String[] args) 
+	{
+		FinalKeyword obj=new FinalKeyword();
+		if(obj.i==obj.j)
+		{ 
+			System.out.println("Same reference");
+		}
+	}
+}
